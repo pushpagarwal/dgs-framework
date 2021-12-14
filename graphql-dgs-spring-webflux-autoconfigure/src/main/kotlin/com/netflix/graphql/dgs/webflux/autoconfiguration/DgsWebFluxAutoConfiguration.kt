@@ -85,7 +85,7 @@ open class DgsWebFluxAutoConfiguration(private val configProps: DgsWebfluxConfig
         @Qualifier("query") providedQueryExecutionStrategy: Optional<ExecutionStrategy>,
         @Qualifier("mutation") providedMutationExecutionStrategy: Optional<ExecutionStrategy>,
         idProvider: Optional<ExecutionIdProvider>,
-        reloadSchemaIndicator: DefaultDgsQueryExecutor.ReloadSchemaIndicator
+        reloadSchemaIndicator: DefaultDgsQueryExecutor.ReloadSchemaIndicator,
         preparsedDocumentProvider: PreparsedDocumentProvider
     ): DgsReactiveQueryExecutor {
 
